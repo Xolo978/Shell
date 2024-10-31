@@ -19,4 +19,4 @@ class CreateCommand(Command):
             print(f"Error creating directory {directory_name}: {e}")
     
     def get_info(self):
-        return "mkdir", "Create a new directory."
+        return "create", "Create a new directory."
