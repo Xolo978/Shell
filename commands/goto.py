@@ -14,3 +14,6 @@ class GotoCommand(Command):
             print(f"Directory {args[0]} not found")
         except PermissionError:
             print(f"Permission denied for directory {args[0]}")
+    
+    def get_info(self):
+        return "goto", "Change the current directory to the specified path."

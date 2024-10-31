@@ -2,8 +2,9 @@ import os
 from .base_cmd import Command
 from typing import List
 
+
 class ShowCommand(Command):
-    def run(self,args: List[str]) -> None:
+    def run(self, args: List[str]) -> None:
         target_dir = "."
         if len(args):
             target_dir = args[0]
@@ -20,4 +21,6 @@ class ShowCommand(Command):
             print(f"Directory {target_dir} not found")
         except PermissionError:
             print(f"Permission denied for {target_dir}")
-        
+
+    def get_info(self):
+        return "show", "List files and directories in the current directory."

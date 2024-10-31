@@ -6,7 +6,8 @@ from commands.base_cmd import Command
 COMMANDS: Dict[str, str] = {
     "goto":"goto",
     "show":"show",
-    "cdir":"cdir"
+    "cdir":"cdir",
+    "help":"help",
 }
 
 

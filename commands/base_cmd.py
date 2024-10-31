@@ -9,3 +9,9 @@ class Command(ABC):
         Handle all errors and exceptions here.
         """
         pass
+    @abstractmethod
+    def get_info(self) -> str:
+        """
+        Return a string with the command information.
+        """
+        pass

@@ -17,3 +17,6 @@ class CreateCommand(Command):
             print(f"Permission denied to create directory {directory_name}")
         except Exception as e:
             print(f"Error creating directory {directory_name}: {e}")
+    
+    def get_info(self):
+        return "mkdir", "Create a new directory."
