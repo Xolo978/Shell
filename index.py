@@ -4,7 +4,8 @@ from typing import Dict
 from commands.base_cmd import Command
 
 COMMANDS: Dict[str, str] = {
-    "goto":"goto"
+    "goto":"goto",
+    "show":"show",
 }
 
 
